@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* background-color: #1a1a1a; Dark background color */
+    /* background: linear-gradient(135deg, #398e96 10%, #3e4c5b 100%); */
+    background: linear-gradient(135deg, #4cd6c5 10%, #1a8e87 100%);
+    color: #ffffff; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 30px; /* Adjust the top margin as needed */
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 30px; /* Adjust the top margin as needed */
+    max-width: 900px;
+}
+
+.calculator-container {
+    flex: 1;
+    box-sizing: border-box;
+    border: 2px solid #335577; /* Darker blue border */
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #1e2951; /* Dark blue background color */
+}
+
+.calculator-container button {
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 3px;
+    color: #ffffff; /* White text color */
+    background-color: #3d4f91; /* Medium blue button color */
+    border: none;
+    cursor: pointer;
+}
+
+.calculator-container button:hover {
+    background-color: #5675c7; /* Lighter blue on hover */
+}
+
+.display-row {
+    height: 130px;
+    max-height: 130px;
+    text-align: right;
+    color: #acfadf; /* Light blue text color */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 5px 5px 5px;
+    background-color: #30445b; /* Darker blue background color */
+}
+
+.display-row .equation {
+    visibility: hidden;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+.display-row .inputAnswer {
+    font-size: 40px;
+}
+
+.calculator-container .number {
+    background-color: #c19b41; /* Orange for number buttons */
+}
+
+.history {
+    box-sizing: border-box;
+    /* background-color: #3d3b40; Dark gray background color */
+    background-color: #495057; 
+    color: #ffffff; /* White text color */
+    font-size: 25px;
+    text-align: center;
+    width: 230px;
+    height: 623px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.history ul {
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: 540px;
+    width: 210px;
+}
+
+.history p {
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+a img {
+    height: 25px;
+    width: 30px;
+    float: right;
+}
